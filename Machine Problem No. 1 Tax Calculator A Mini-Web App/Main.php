@@ -103,7 +103,7 @@ break;
         } 
 		else if ($biAnnual>400000 && $biAnnual<800000) {
 			$biAnnualPay = (float) round(($_POST['monetaryAmmount'] * 24),2);
-            $biAnnualPay = (float) round((($biAnnual - 400000) * 0.25) + 30000,2);
+            $biAnnualTax = (float) round((($biAnnual - 400000) * 0.25) + 30000,2);
 			$bisalary = (float) $_POST['monetaryAmmount'];
 			$finalAmount = (float) round(($biAnnualTax / 12),2);
 			$salary=0;
@@ -113,7 +113,7 @@ break;
         }
 		else if ($biAnnual>800000 && $biAnnual<2000000) {
 			$biAnnualPay = (float) round(($_POST['monetaryAmmount'] * 24),2);
-           $biAnnualPay = (float) round((($biAnnual - 800000) * 0.30) + 130000,2);
+           $biAnnualTax = (float) round((($biAnnual - 800000) * 0.30) + 130000,2);
 			$bisalary = (float) $_POST['monetaryAmmount'];
 			$finalAmount = (float) round(($biAnnualTax / 12),2);
 			$salary=0;
